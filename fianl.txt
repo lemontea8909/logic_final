@@ -39,6 +39,7 @@ reg [3:0] C3_count;
 reg [3:0] C4_count;
 reg [2:0] seg_count;
 
+//8*8個位置的矩陣 X0~X7是角色的移動矩陣
 
 parameter logic [7:0] X0 [7:0]='{
          8'b11111111,
@@ -733,49 +734,49 @@ initial
 		DATA_R = 8'b11111111;
 		DATA_G = 8'b11111111;
 		DATA_B = 8'b11111111;
-	   a_move [7:0] = init; //a排畫面更新用 //drop item
-      b_move [7:0] = init; //b排畫面更新用 //drop item
+	        a_move [7:0] = init; //a排畫面更新用 //drop item
+                b_move [7:0] = init; //b排畫面更新用 //drop item
 		c_move [7:0] = init; //c排畫面更新用 //drop item
 		d_move [7:0] = init; //d排畫面更新用 //drop item
 		e_move [7:0] = init; //e排畫面更新用 //drop item
 		f_move [7:0] = init; //f排畫面更新用 //drop item
 		g_move [7:0] = init; //g排畫面更新用 //drop item
 		h_move [7:0] = init; //h排畫面更新用 //drop item
-		a_shoot = 0;          
-		b_shoot = 0;
-		c_shoot = 0;
-		d_shoot = 0;
-		e_shoot = 0;
-		f_shoot = 0;
-		g_shoot = 0;
-		h_shoot = 0;
-		a_s_move = init;
-		b_s_move = init;
-		c_s_move = init;
-		d_s_move = init;
-		e_s_move = init;
-		f_s_move = init;
-		g_s_move = init;
-		h_s_move = init;
-		a_reset = 0;
-		b_reset = 0;
-		c_reset = 0;
-		d_reset = 0;
-		e_reset = 0;
-		f_reset = 0;
-		g_reset = 0;
-		h_reset = 0;
+		a_shoot = 0;         //a排counter shoot   
+		b_shoot = 0;         //b排counter shoot
+		c_shoot = 0;         //c排counter shoot
+		d_shoot = 0;         //d排counter shoot
+		e_shoot = 0;         //e排counter shoot
+		f_shoot = 0;         //f排counter shoot
+		g_shoot = 0;         //g排counter shoot
+		h_shoot = 0;         //h排counter shoot
+		a_s_move = init;     //a排畫面更新用 shoot
+		b_s_move = init;     //b排畫面更新用 shoot
+		c_s_move = init;     //c排畫面更新用 shoot
+		d_s_move = init;     //d排畫面更新用 shoot
+		e_s_move = init;     //e排畫面更新用 shoot
+		f_s_move = init;     //f排畫面更新用 shoot
+		g_s_move = init;     //g排畫面更新用 shoot
+		h_s_move = init;     //h排畫面更新用 shoot
+		a_reset = 0;         //a排 collision reset
+		b_reset = 0;         //b排 collision reset
+		c_reset = 0;         //c排 collision reset
+		d_reset = 0;         //d排 collision reset
+		e_reset = 0;         //e排 collision reset
+		f_reset = 0;         //f排 collision reset
+		g_reset = 0;         //g排 collision reset
+		h_reset = 0;         //h排 collision reset
 		life = 11'b000001111101;
 		gameover = 0;
-		rnd = 20;
+		rnd = 20;            //random number
 		count_rand = 44;
-		s_index = 8;
-		seg_cnt = 4'b1110;
-		seg_count = 0;
-		C1_count = 4'b0000;
-		C2_count = 4'b0000;
-		C3_count = 4'b0000;
-		C4_count = 4'b0000;
+		s_index = 8;         //shoot detect 
+		seg_cnt = 4'b1110;   //七段顯示器使用
+		seg_count = 0;       //七段顯示器使用
+		C1_count = 4'b0000;  //沒有用到
+		C2_count = 4'b0000;  //時間倒數 百位數
+		C3_count = 4'b0000;  //時間倒數 十位數
+		C4_count = 4'b0000;  //時間倒數 個位數
    end
 
 divfreq F0(CLK,CLK_div);         //clock of output
