@@ -27,3 +27,9 @@ bottum:控制左右移動,射擊,reset
 通關畫面  時間到60秒 通關
 ![image](https://github.com/lemontea8909/logic_final/blob/main/DSC_0286.JPG)
 
+
+實作影片
+
+https://drive.google.com/file/d/14MKm177YqhXPsRgxx-McmmkNuC0VAwJ1/view?usp=sharing
+
+https://drive.google.com/file/d/14FLKN36rymiORBHcyKPOov4e6K-OfTMX/view?usp=sharing
