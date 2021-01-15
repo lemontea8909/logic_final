@@ -27,6 +27,9 @@ bottum:控制左右移動,射擊,reset
 通關畫面  時間到60秒 通關
 ![image](https://github.com/lemontea8909/logic_final/blob/main/DSC_0286.JPG)
 
+功能說明:   <BR>
+持續躲避和射擊掉落物直到時間到為止~<BR>
+
 
 實作影片
 
