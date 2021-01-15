@@ -38,7 +38,7 @@ module test(output reg [7:0] DATA_R, DATA_G, DATA_B,   //8*8LED輸出(RED,GREEN,
             input CLK);                                //使用內建CLK PIN_22            <BR>
 
 reg [2:0] position;    //character's position  <BR>
-bit [3:0] a,b,c,d,e,f,g,h;   //a~h行的掉落物counter 初始值為8 當觸發啟動a排的掉落物的時候 將a <= 0 由0開始+1到8 <BR>
+bit [3:0] a,b,c,d,e,f,g,h;   //a到h行的掉落物counter 初始值為8 當觸發啟動a排的掉落物的時候 將a <= 0 由0開始+1到8 <BR>
 bit [7:0] a_move [7:0];      //用於儲存目前a排的掉落物的矩陣 <BR>
 bit [7:0] b_move [7:0];<BR>
 bit [7:0] c_move [7:0];<BR>
@@ -52,7 +52,7 @@ bit [2:0] cnt;    //畫面更新的控制<BR>
 reg [2:0] gameover;  //遊戲結束<BR>
 reg [11:0] life;   //生命值<BR>
 bit [7:0] rnd,count_rand;  //產生亂數使用 亂數的結果為rnd <BR>
-bit [3:0] a_shoot,b_shoot,c_shoot,d_shoot,e_shoot,f_shoot,g_shoot,h_shoot; //a~h行的射擊子彈counter 初始值為0 當觸發啟動a排的時候 將a_shoot <= 7 由7開始-1到0 <BR>
+bit [3:0] a_shoot,b_shoot,c_shoot,d_shoot,e_shoot,f_shoot,g_shoot,h_shoot; //a到h行的射擊子彈counter 初始值為0 當觸發啟動a排的時候 將a_shoot <= 7 由7開始-1到0 <BR>
 bit [7:0] a_s_move [7:0];  //用於儲存目前a排的子彈位置的矩陣<BR>
 bit [7:0] b_s_move [7:0];<BR>
 bit [7:0] c_s_move [7:0];<BR>
