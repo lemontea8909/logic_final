@@ -1,16 +1,16 @@
 # logic_final
-109 Logical design final project
+109 Logical design final project <BR>
+ 
+作者:108321018 , 108321013 <BR>
 
-作者:108321018 , 108321013
+藍色代表 操作腳色 <BR>
+紅色代表 掉落物   <BR>
+綠色代表 射擊子彈 <BR>
 
-藍色代表 操作腳色
-紅色代表 掉落物
-綠色代表 射擊子彈
-
-input/output unit
-七段顯示器:時間計時
-8*8LED顯示器:遊戲畫面
-bottum:控制左右移動,射擊,reset
+input/output unit  <BR>
+七段顯示器:時間計時  <BR>
+8*8LED顯示器:遊戲畫面 <BR>
+bottum:控制左右移動,射擊,reset <BR>
 
 起始畫面
 ![image](https://github.com/lemontea8909/logic_final/blob/main/DSC_0283.JPG)
