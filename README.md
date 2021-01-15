@@ -7,6 +7,11 @@
 紅色代表 掉落物
 綠色代表 射擊子彈
 
+input/output unit
+七段顯示器:時間計時
+8*8LED顯示器:遊戲畫面
+bottum:控制左右移動,射擊,reset
+
 起始畫面
 ![image](https://github.com/lemontea8909/logic_final/blob/main/DSC_0283.JPG)
 
@@ -21,3 +26,4 @@
 
 通關畫面  時間到60秒 通關
 ![image](https://github.com/lemontea8909/logic_final/blob/main/DSC_0286.JPG)
+
