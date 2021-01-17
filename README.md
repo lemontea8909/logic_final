@@ -34,7 +34,7 @@ module test(output reg [7:0] DATA_R, DATA_G, DATA_B,   //8*8LED輸出(RED,GREEN,
             output reg [3:0] COMM,                     //8*8LED輸出控制                <BR>
 				        output reg [6:0] seg,                      //七段顯示器輸出(a,b,c,d,e,f,g)  <BR>
 			         output reg [3:0] seg_cnt,                  //七段顯示器輸出控制             <BR>
-            input left,right,reset,shoot,              //左移,右移,重置,射擊 按鍵       <BR>
+            input left,right,reset,shoot,              //左移,右移,重置,射擊 按鍵  接到4-bit SW  <BR>
             input CLK);                                //使用內建CLK PIN_22            <BR>
 
 reg [2:0] position;    //character's position  <BR>
